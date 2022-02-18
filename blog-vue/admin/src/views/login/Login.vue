@@ -117,7 +117,7 @@ export default {
   bottom: 0;
   right: 0;
   left: 0;
-  background: url(https://www.static.talkxj.com/config/0w3pdr.jpg) center center /
+  background: url(https://minio.404name.top/test/config/3e1f567c9efb8a5354186722b484bb77.jpg) center center /
     cover no-repeat;
 }
 .login-card {

@@ -132,7 +132,7 @@
             :src="
               scope.row.articleCover
                 ? scope.row.articleCover
-                : 'https://www.static.talkxj.com/articles/c5cc2b2561bd0e3060a500198a4ad37d.png'
+                : 'https://static.talkxj.com/articles/c5cc2b2561bd0e3060a500198a4ad37d.png'
             "
           />
           <i
@@ -258,7 +258,7 @@
            <router-link :to="'/goods/' + scope.row.id">
                 编辑商品
             </router-link>
-           
+
           </el-button>
 
           <el-button
@@ -269,7 +269,7 @@
           >
             编辑
           </el-button>
-          
+
           <el-popconfirm
             title="确定删除吗？"
             style="margin-left:10px"

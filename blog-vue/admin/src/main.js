@@ -89,7 +89,7 @@ axios.interceptors.response.use(
     return Promise.reject(error);
   }
 );
-axios.defaults.baseURL = "https://lightcloud-api-1592862-1309456602.ap-shanghai.run.tcloudbase.com";
+axios.defaults.baseURL = "https://lightcloud-api-1592862-1309456602.ap-shanghai.run.tcloudbase.com"
 new Vue({
   router,
   store,
