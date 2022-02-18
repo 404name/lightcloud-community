@@ -68,7 +68,7 @@ class BlogInfoControllerTest extends AbstractTransactionalJUnit4SpringContextTes
     @org.junit.jupiter.api.Test
     void getBlogBackInfo() {
         logger.info("2. 后台信息获取测试===============================>");
-        Result.ok(blogInfoService.getBlogBackInfo());
+        System.out.println(Result.ok(blogInfoService.getBlogBackInfo()));
         logger.info("2. 后台信息获取测试===============================>");
     }
 

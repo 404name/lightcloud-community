@@ -67,9 +67,8 @@ router.afterEach(() => {
   NProgress.done();
 });
 
-axios.create({
-  baseURL: 'https://lightcloud-api-1592862-1309456602.ap-shanghai.run.tcloudbase.com'
-})
+axios.defaults.baseURL='https://lightcloud-api-1592862-1309456602.ap-shanghai.run.tcloudbase.com/';
+Vue.prototype.$http = axios
 
 axios.interceptors.response.use(
   function(response) {
