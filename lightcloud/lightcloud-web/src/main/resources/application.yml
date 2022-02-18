@@ -13,7 +13,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://${prod_mysql_host:localhost}:${prod_mysql_port:3306}/${prod_mysql_db:lightcloud}?serverTimezone=Asia/Shanghai&allowMultiQueries=true
     username: ${prod_mysql_username:root}
-    password: ${prod_mysql_password:123456}
+    password: ${prod_mysql_password:123465}
     hikari:
       minimum-idle: 5
       # 空闲连接存活最大时间，默认600000（10分钟）
