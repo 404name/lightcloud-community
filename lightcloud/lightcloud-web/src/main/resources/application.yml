@@ -1,0 +1,113 @@
+# 配置端口
+server:
+  port: ${prod_port:9000}
+  servlet:
+    context-path: /api
+    session:
+      timeout: 21600
+
+# 配置mysql数据库
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${prod_mysql_host:localhost}:${prod_mysql_port:3306}/${prod_mysql_db:lightcloud}?serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: ${prod_mysql_username:root}
+    password: ${prod_mysql_password:123456}
+    hikari:
+      minimum-idle: 5
+      # 空闲连接存活最大时间，默认600000（10分钟）
+      idle-timeout: 180000
+      # 连接池最大连接数，默认是10
+      maximum-pool-size: 10
+      # 此属性控制从池返回的连接的默认自动提交行为,默认值：true
+      auto-commit: true
+      # 连接池名称
+      pool-name: MyHikariCP
+      # 此属性控制池中连接的最长生命周期，值0表示无限生命周期，默认1800000即30分钟
+      max-lifetime: 1800000
+      # 数据库连接超时时间,默认30秒，即30000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+  # redis配置
+  redis:
+    host: ${prod_redis_host:localhost}
+    port: ${prod_redis_port:6379}
+    password:
+  # mq配置
+  rabbitmq:
+    host: ${prod_rabbitmq_host:localhost}
+    port: ${prod_rabbitmq_port:5672}
+    username: ${prod_rabbitmq_username:guest}
+    password: ${prod_rabbitmq_password:guest}
+  # es配置 若搜索模式为mysql可删除
+  elasticsearch:
+    rest:
+      uris: ${prod_elasticsearch_host:localhost}:${prod_elasticsearch_port:9200}
+  # 邮箱配置
+  mail:
+    host: ${prod_mail_host:smtp.qq.com}
+    username: ${prod_mail_username:test@qq.com}
+    password: ${prod_mail_password:password}
+    default-encoding: UTF-8
+    port: ${prod_mail_port:587}
+    properties:
+      auth: true
+      socketFactory:
+      class: javax.net.ssl.SSLSocketFactory
+  # 上传图片大小限制
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size:  10MB
+
+# 配置MybatisPlus
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+
+# 搜索模式 可选 elasticsearch或mysql
+search:
+  mode: ${prod_search_mode:elasticsearch}
+
+# 上传模式 可选 oss或local  （/一定不能去！！！）
+upload:
+  mode: ${prod_upload_mode:minio}
+  local:
+    # nginx映射本地文件路径，无域名则为 ip +端口
+    url: http://localhost:${prod_port:9000}/
+    # 本地文件存储路径
+    path: D:/static/img/
+  minio:
+    # minio服务地址
+    endpoint: ${prod_upload_endpoint:http://localhost/}
+    accessKey: ${prod_upload_accessKey:404name}
+    secretKey: ${prod_upload_secretKey:123456}
+    # 桶名
+    bucketName: ${prod_upload_bucketName:test}
+  oss:
+    url: https://OSS域名/
+    endpoint: OSS配置endpoint
+    accessKeyId: OSS配置accessKeyId
+    accessKeySecret: OSS配置accessKeySecret
+    bucketName: OSS配置bucketName
+
+# 网站前台域名（邮件通知用）
+website:
+  url: https://lightcloud.404name.top
+
+#第三方配置信息
+qq:
+  app-id: ${prod_qq_appid:123456}
+  check-token-url: https://graph.qq.com/oauth2.0/me?access_token={access_token}
+  user-info-url: https://graph.qq.com/user/get_user_info?openid={openid}&access_token={access_token}&oauth_consumer_key={oauth_consumer_key}
+
+weibo:
+  app-id: 微博APPID
+  app-secret: 微博APPSECRET
+  grant-type: authorization_code
+  redirect-url: 微博回调地址
+  access-token-url: https://api.weibo.com/oauth2/access_token
+  user-info-url: https://api.weibo.com/2/users/show.json?uid={uid}&access_token={access_token}

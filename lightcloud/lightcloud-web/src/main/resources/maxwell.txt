@@ -1,0 +1,117 @@
+{
+  "flag": true,
+  "code": 20000,
+  "message": "操作成功",
+  "data": {
+    "articleCount": 16,
+    "categoryCount": 6,
+    "tagCount": 13,
+    "viewsCount": "0",
+    "websiteConfig": {
+      "websiteAvatar": "https://minio.404name.top/test/config/0e2158b80a2114ac744a0208342a1c4a.png",
+      "websiteName": "轻云社区",
+      "websiteAuthor": "轻云社区",
+      "websiteIntro": "一款轻量简约的知识社区",
+      "websiteNotice": "轻云社区v 1.0.0\n社区想法：用户可以提供分享自己擅长的内容，来进行学业互助，也可以有偿来进行虚拟交易。未完成进度：购物、社交。",
+      "websiteCreateTime": "2021-11-11",
+      "websiteRecordNo": "鄂ICP备2021002234号-1",
+      \"version\": \"v1.0.0\",\"downloadUrl\": \" \",\"versionDesc\": \"轻云社区v 1.0.0\\n2021-12-12beta版本内容：支持互动点赞，完成基本互动\\n待更新内容xxxx\",
+      "socialLoginList": [
+        "qq",
+        "weibo"
+      ],
+      "socialUrlList": [
+        "qq",
+        "github"
+      ],
+      "qq": "1308964967",
+      "github": "https://github.com/404name",
+      "gitee": "https://gitee.com/feng_meiyu",
+      "touristAvatar": "https://www.static.talkxj.com/photos/0bca52afdb2b9998132355d716390c9f.png",
+      "userAvatar": "https://minio.404name.top/test/config/604a95c0113e011b6096b4aca780a978.png",
+      "isCommentReview": 0,
+      "isMessageReview": 0,
+      "isEmailNotice": 1,
+      "isReward": 1,
+      "weiXinQRCode": "https://www.static.talkxj.com/photos/4f767ef84e55ab9ad42b2d20e51deca1.png",
+      "alipayQRCode": "https://www.static.talkxj.com/photos/13d83d77cc1f7e4e0437d7feaf56879f.png",
+      "isChatRoom": 1,
+      "websocketUrl": "wss://ws.404name.top",
+      "isMusicPlayer": 0
+    },
+    "pageList": [
+      {
+        "pageCover": "https://minio.404name.top/test/config/d64c2bea70ea3a9c567dc90ce7ef2b46.jpg",
+        "id": 1,
+        "pageName": "首页",
+        "pageLabel": "/"
+      },
+      {
+        "pageCover": "https://minio.404name.top/test/config/c78473e005768afbeb8186daf9c8f3b1.jpg",
+        "id": 2,
+        "pageName": "归档",
+        "pageLabel": "archives"
+      },
+      {
+        "pageCover": "https://www.static.talkxj.com/config/83be0017d7f1a29441e33083e7706936.jpg",
+        "id": 3,
+        "pageName": "分类",
+        "pageLabel": "categories"
+      },
+      {
+        "pageCover": "https://minio.404name.top/test/config/c01964e9faf88b5c0aa6c0e46d7c3631.jpg",
+        "id": 4,
+        "pageName": "标签",
+        "pageLabel": "tags"
+      },
+      {
+        "pageCover": "https://www.static.talkxj.com/config/f8fb7e2de0780239048276e7840527e5.jpg",
+        "id": 5,
+        "pageName": "相册",
+        "pageLabel": "albums"
+      },
+      {
+        "pageCover": "https://www.static.talkxj.com/config/9034edddec5b8e8542c2e61b0da1c1da.jpg",
+        "id": 6,
+        "pageName": "友链",
+        "pageLabel": "links"
+      },
+      {
+        "pageCover": "https://www.static.talkxj.com/config/2a56d15dd742ff8ac238a512d9a472a1.jpg",
+        "id": 7,
+        "pageName": "关于",
+        "pageLabel": "about"
+      },
+      {
+        "pageCover": "https://minio.404name.top/test/config/9c7a30c905df0213d823a056847344e9.jpg",
+        "id": 8,
+        "pageName": "留言",
+        "pageLabel": "message"
+      },
+      {
+        "pageCover": "https://minio.404name.top/test/bilibili.gif",
+        "id": 9,
+        "pageName": "个人中心",
+        "pageLabel": "user"
+      },
+      {
+        "pageCover": "https://minio.404name.top/test/config/5b80c27e8b004ed32523f172b16d45ad.jpg",
+        "id": 10,
+        "pageName": "文章列表",
+        "pageLabel": "articleList"
+      },
+      {
+        "pageCover": "https://minio.404name.top/test/config/d4671d76244a6a3bea4413d82ba93bcb.jpg",
+        "id": 903,
+        "pageName": "推荐",
+        "pageLabel": "recommend"
+      }
+    ]
+  }
+}
+
+
+{"alipayQRCode":"https://www.static.talkxj.com/photos/13d83d77cc1f7e4e0437d7feaf56879f.png","gitee":"https://gitee.com/feng_meiyu","github":"https://github.com/404name","isChatRoom":1,"isCommentReview":0,"isEmailNotice":1,"isMessageReview":0,"isMusicPlayer":0,"isReward":1,"qq":"1308964967","socialLoginList":["qq","weibo"],"socialUrlList":["qq","github"],"touristAvatar":"https://www.static.talkxj.com/photos/0bca52afdb2b9998132355d716390c9f.png","userAvatar":"https://minio.404name.top/test/config/604a95c0113e011b6096b4aca780a978.png","websiteAuthor":"轻云社区","websiteAvatar":"https://minio.404name.top/test/config/0e2158b80a2114ac744a0208342a1c4a.png","websiteCreateTime":"2021-11-11","websiteIntro":"一款轻量简约的知识社区","websiteName":"轻云社区","websiteNotice":"轻云社区v 1.0.0\n社区想法：用户可以提供分享自己擅长的内容，来进行学业互助，也可以有偿来进行虚拟交易。未完成进度：购物、社交。","websiteRecordNo":"鄂ICP备2021002234号-1","websocketUrl":"wss://ws.404name.top","weiXinQRCode":"https://www.static.talkxj.com/photos/4f767ef84e55ab9ad42b2d20e51deca1.png"}
+
+
+"{\"alipayQRCode\":\"https://www.static.talkxj.com/photos/13d83d77cc1f7e4e0437d7feaf56879f.png\",\"gitee\":\"https://gitee.com/feng_meiyu\",\"github\":\"https://github.com/404name\",\"isChatRoom\":1,\"isCommentReview\":0,\"isEmailNotice\":1,\"isMessageReview\":0,\"isMusicPlayer\":0,\"isReward\":1,\"qq\":\"1308964967\",\"socialLoginList\":[\"qq\",\"weibo\"],\"socialUrlList\":[\"qq\",\"github\"],\"touristAvatar\":\"https://www.static.talkxj.com/photos/0bca52afdb2b9998132355d716390c9f.png\",\"userAvatar\":\"https://minio.404name.top/test/config/604a95c0113e011b6096b4aca780a978.png\",\"websiteAuthor\":\"轻云社区\",\"websiteAvatar\":\"https://minio.404name.top/test/config/0e2158b80a2114ac744a0208342a1c4a.png\",\"websiteCreateTime\":\"2021-11-11\",\"websiteIntro\":\"一款轻量简约的知识社区\",\"websiteName\":\"轻云社区\",\"websiteNotice\":\"轻云社区v 1.0.0\\n社区想法：用户可以提供分享自己擅长的内容，来进行学业互助，也可以有偿来进行虚拟交易。未完成进度：购物、社交。\",\"websiteRecordNo\":\"鄂ICP备2021002234号-1\",\"version\": \"v1.0.0\",\"downloadUrl\": \" \",\"versionDesc\": \"轻云社区v 1.0.0\\n2021-12-12beta版本内容：支持互动点赞，完成基本互动\\n待更新内容xxxx\",\"websocketUrl\":\"wss://ws.404name.top\",\"weiXinQRCode\":\"https://www.static.talkxj.com/photos/4f767ef84e55ab9ad42b2d20e51deca1.png\"}"
