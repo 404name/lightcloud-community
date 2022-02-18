@@ -65,9 +65,6 @@ router.beforeEach((to, from, next) => {
 router.afterEach(() => {
   NProgress.done();
 });
-axios.create({
-  baseURL: 'https://lightcloud-api-1592862-1309456602.ap-shanghai.run.tcloudbase.com'
-})
 // 响应拦截器
 axios.interceptors.response.use(
   function(response) {
@@ -92,7 +89,7 @@ axios.interceptors.response.use(
     return Promise.reject(error);
   }
 );
-
+axios.defaults.baseURL = "https://lightcloud-api-1592862-1309456602.ap-shanghai.run.tcloudbase.com";
 new Vue({
   router,
   store,

@@ -22,6 +22,7 @@ import Toast from "./components/toast/index";
 import NProgress from "nprogress";
 import "nprogress/nprogress.css";
 
+
 Vue.prototype.config = config;
 Vue.config.productionTip = false;
 Vue.use(animated);
@@ -67,8 +68,7 @@ router.afterEach(() => {
   NProgress.done();
 });
 
-axios.defaults.baseURL='https://lightcloud-api-1592862-1309456602.ap-shanghai.run.tcloudbase.com/';
-Vue.prototype.$http = axios
+
 
 axios.interceptors.response.use(
   function(response) {
@@ -82,7 +82,7 @@ axios.interceptors.response.use(
     return Promise.reject(error);
   }
 );
-
+axios.defaults.baseURL = "https://lightcloud-api-1592862-1309456602.ap-shanghai.run.tcloudbase.com"
 new Vue({
   router,
   store,
