@@ -5,12 +5,12 @@ FROM maven:3.6.0-jdk-8-slim as build
 # 指定构建过程中的工作目录
 WORKDIR /app
 
-# 将src目录下所有文件，拷贝到工作目录中src目录下
-COPY src /app/src
-
-# 将pom.xml文件，拷贝到工作目录下
-COPY settings.xml pom.xml /app/
-
+## 将src目录下所有文件，拷贝到工作目录中src目录下
+#COPY src /app/src
+#
+## 将pom.xml文件，拷贝到工作目录下
+#COPY settings.xml pom.xml /app/
+COPY . .
 # 执行代码编译命令
 # 自定义settings.xml, 选用国内镜像源以提高下载速度
 RUN mvn -s /app/settings.xml -f /app/pom.xml clean package
@@ -28,7 +28,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.tencent.com/g' /etc/apk/repositorie
 WORKDIR /app
 
 # 将构建产物jar包拷贝到运行时目录中
-COPY --from=build /app/target/blog-springboot-0.0.1.jar .
+COPY --from=build /app/lightcloud-web/target/blog-springboot-0.0.1.jar .
 
 # 暴露端口
 EXPOSE 80
